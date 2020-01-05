@@ -1,0 +1,95 @@
+.header {
+	background: url("../images/bg-header.jpg") no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100vh;
+    position: relative;
+	color: $white;
+	margin-bottom: $margin;
+
+	.headline {
+		&__title {
+			font-size: 80px;
+			margin-bottom: 35px;
+			color: $white;
+		}
+
+		&__caption {
+			text-transform: uppercase;
+			margin-bottom: 30vh;
+			// сделать чтобы скрол бил всегда снизу
+		}
+		
+		.scroll-down{
+			width: 40px;
+			height: 40px;
+			border: 1px solid $white;
+			border-radius: 50%;
+			margin: 0 auto;
+
+			.icon {
+				width: 25px;
+				height: 25px;
+				text-align: center;
+				line-height: 40px;
+			}
+		}
+	}
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: calc(50vh - 150px);
+	
+	.menu {
+		display: flex;
+
+		&__item {
+			margin: 0 20px;
+			list-style-type: circle;
+
+			&:hover {
+				list-style-type: disc;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&--active {
+				list-style-type: disc
+			}
+		}
+
+		&__link {
+			text-decoration: none;
+			font-size: 18px;
+			color: $white;
+		}
+
+		&__social {
+			width: 40px;
+			height: 40px;
+			border: 1px solid $white;
+			border-radius: 50%;
+			margin-right: 30px;
+			
+			&:hover{
+				background: red;
+			}
+
+			.icon {
+				width: 25px;
+				height: 25px;
+			}
+
+			a {
+				display: block;
+				text-align: center;
+				// неправильно
+			}
+		}
+	}
+}

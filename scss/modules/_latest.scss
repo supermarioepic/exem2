@@ -1,0 +1,105 @@
+.latest {
+    background:url('../images/bg-news.jpg') no-repeat;
+    background-size: cover; 
+        
+    &__teatle{
+        color: #fff;
+        text-align: center;
+        padding: 10%;
+        font-size: 44px;
+        position: relative;
+ 
+        &::before {
+         content: '';
+         height: 1px;
+         width: 100px;
+         background-color: #fff;
+         position: absolute;
+         top: 60px;
+         left:45%
+     }
+    }
+     .teatle{
+     margin-top: 20px;
+     text-align: center;
+         }
+     .slidess{
+         font-size: 22px;
+         text-transform: uppercase;
+         color: #2c4058;
+         padding-left: 20px;
+         padding-top: 20px;
+     }
+ .post{
+     height: 320px;
+     }
+     .post-caption{
+         color: #4b5562;
+         font-family: 'Open Sans', sans-serif;
+         font-size: 18px;
+         padding-bottom: 35px;
+         padding-top: 20px;
+         padding-left: 20px;
+         line-height: 30px;
+         }
+ 
+ .slider {
+     // @include size(100%, 100vh);
+     &__item {
+         position: relative;
+         overflow: hidden;
+         margin-bottom: 100px;
+         background: #fff;
+         margin-right: 10px;
+     }
+ }
+     .slick{
+         &-arrow{
+             z-index: 9;
+             transform: scale(1.5);
+         }
+         
+         &-prev{
+             left: -80px;
+         }
+ 
+         &-next{
+             right: -80px;
+         }
+ 
+         &-dots{
+             bottom: 25px;
+ 
+             li button::before{
+                 color: #fff;
+                 font-size: 15px;
+                 opacity: .5;
+             }
+ 
+             li.slick-active button::before{
+                 opacity: 1;
+             }
+          }
+ 
+     }
+ 
+ 
+ }
+ .slick-dotted.slick-slider{
+   margin-bottom: 0;
+ }
+ .autor{
+     text-transform: uppercase;
+     color: #2c4058;
+     font-size: 18px;
+     position: relative;
+ 
+  }
+ 
+ .author{
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     margin-left: 10px;
+  
+ }

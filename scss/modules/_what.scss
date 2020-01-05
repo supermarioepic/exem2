@@ -1,0 +1,70 @@
+.what {
+    .trade {
+        display: flex;
+        margin-bottom: $margin;
+
+        .photo {
+            &__img {
+                position: relative;
+                max-width: 560px;
+                z-index: 2;
+            }
+
+            &__bg {
+                position: absolute;
+                bottom: 70px;
+                right: 200px;
+                width: 100%;
+                height: 420px;
+                background-color: #55b7ff;
+
+                &--2 {
+                    position: absolute;
+                    bottom: 70px;
+                    left: 200px;
+                    width: 100%;
+                    height: 420px;
+                    background-color: #7e5aff;
+                }
+            }
+        }
+
+        .information {
+            padding-top: 50px;
+            
+            &__subtitle {
+                font-weight: 400;
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+
+            &__captione {
+                font-family: 'Open Sans', sans-serif;
+                color: $darkblue;
+                margin-bottom: 35px;
+            }
+
+            &__button {
+                text-transform: uppercase;
+                text-align: center;
+                color: $darkblue;
+                border: 1px solid $darkblue;
+                width: 200px;
+                line-height: 44px;
+                margin-bottom: 60px;
+                transition: all 0.5s;
+
+                &:hover {
+                    background: black;
+                    color: $white;
+                }
+            }
+
+            &__geo {
+                font-family: 'Open Sans', sans-serif;
+                font-style: italic;
+                color: $darkblue;
+            }
+        }
+    }
+}

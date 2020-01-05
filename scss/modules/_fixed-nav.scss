@@ -1,0 +1,28 @@
+.fixed-nav {
+	position: fixed;
+	top: 50%;
+	right: 25px;
+	transform: translateY(-50%);
+    z-index: 999;
+
+    a {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: relative;
+        text-decoration: none;
+        margin-bottom: 20px;
+        transition: all 0.3s;
+
+        &:hover {
+            background-color: blue;
+        }
+    }
+}
+
+.fixed-nav a.active {
+	background-color: white;
+	transform: scale(1.5);
+}
